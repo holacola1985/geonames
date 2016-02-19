@@ -1,0 +1,36 @@
+{
+  "name": "geonames",
+  "version": "0.1.0",
+  "description": "geonames.org wrapper",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "request": "^2.69.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "supertest": "^1.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lightstream-company/geonames.git"
+  },
+  "keywords": [
+    "geonames",
+    "geoloc",
+    "geolocation"
+  ],
+  "author": "dandreit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lightstream-company/geonames/issues"
+  },
+  "homepage": "https://github.com/lightstream-company/geonames#readme"
+}
