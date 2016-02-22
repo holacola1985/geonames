@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "express": "^4.13.4",
+    "geojson": "^0.3.0",
     "request": "^2.69.0"
   },
   "devDependencies": {
