@@ -2,7 +2,7 @@
   "name": "geonames",
   "version": "0.1.0",
   "description": "geonames.org wrapper",
-  "main": "index.js",
+  "main": "app.js",
   "directories": {
     "test": "test"
   },
