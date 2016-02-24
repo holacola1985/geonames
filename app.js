@@ -17,7 +17,6 @@ app.get('/coord/:place', function(req, res) {
   // geonames_response = request
   //   .get('http://localhost:80/city?name=' + req.params.place)
   //   .pipe(res);
-  // console.log(res.body);
 
   request('http://localhost:80/city?name=' + req.params.place,
     function(error, response, body) {
@@ -30,9 +29,9 @@ app.get('/coord/:place', function(req, res) {
           geonames_first[0].latitude = geonames_first[0].location.latitude;
           geonames_first[0].longitude = geonames_first[0].location.longitude;
           geojson.parse(geonames_first,
-            { Point: ['latitude', 'longitude'] },
-            function (geoJsonObj) {
-              console.log(JSON.stringify(geoJsonObj, null, 2));
+            { Point: ['latitude', 'longitude'], include: [] },
+            function(geoJsonObj) {
+              // console.log(JSON.stringify(geoJsonObj, null, 2));
               res.send(geoJsonObj);
             }
           );
